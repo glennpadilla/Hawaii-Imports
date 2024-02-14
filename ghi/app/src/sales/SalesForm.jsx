@@ -41,7 +41,7 @@ function SalesForm(){
     };
 
     const loadAuto = async () => {
-        const autoData = await fetch('http://localhost:8100/api/automobiles');
+        const autoData = await fetch('http://localhost:8100/api/automobiles/');
         if (autoData.ok) {
             const data = await autoData.json();
             setAutomobiles(data.autos);
